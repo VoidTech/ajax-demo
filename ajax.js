@@ -7,10 +7,10 @@
 //Påbörja en hämtning
 var request = new XMLHttpRequest();
 
-request.onreadystatechange = function(req, res)
+request.onreadystatechange = function()
 {
 	console.log("Någonting hände!");
-    console.log("Svaret (response) är" + res.responseText);
+    console.log("Svaret (response) är" + request.responseText);
 }
 
 request.open('GET','http://mardby.se/AJK15G/lorem_text.php');
