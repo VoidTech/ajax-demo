@@ -12,4 +12,5 @@ request.onreadystatechange = function()
 	console.log("Någonting hände!");
 }
 
-requst.open('GET',"http://www.google.com");
+request.open('GET',"http://www.google.com");
+request.send();
