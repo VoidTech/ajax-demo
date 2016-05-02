@@ -14,6 +14,8 @@ request.onreadystatechange = function()
     if(request.readyState == 4 && request.status == 200)
     {
     console.log("Svaret (response) är" + request.responseText);
+    var dataText = reqest.responseText;
+    document.write(dataText);
     }
 }
 
